@@ -1,8 +1,9 @@
 import { defineConfig } from "vite";
-import react from "To-Do-List";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+  base: "/To-Do-List/",
   server: {
     port: 5173
   }
